@@ -1,9 +1,12 @@
 -- lspconfig
 local nvim_lsp = require('lspconfig')
 local servers = {'tsserver'}
+require("lsp-format").setup {}
 
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+    require "lsp-format".on_attach(client)
+
     local opts = { noremap=true, silent=true }
 
     buf_set_keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)
@@ -24,6 +27,8 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
     buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
+
+require "lspconfig".gopls.setup { on_attach = on_attach }
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
