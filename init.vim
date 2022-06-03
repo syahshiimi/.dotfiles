@@ -40,7 +40,8 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 
 " Code formatting/prettier
-Plug 'mhartington/formatter.nvim'
+Plug 'lukas-reineke/lsp-format.nvim'
+
 
 
 call plug#end()
