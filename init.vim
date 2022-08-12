@@ -54,3 +54,6 @@ nnoremap <C-p> :Telescope find_files<Cr>
 
 
 colorscheme onedark
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
