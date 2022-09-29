@@ -1,6 +1,6 @@
 -- lspconfig
 local nvim_lsp = require('lspconfig')
-local servers = {'tsserver', 'gopls', 'html', 'cssls', 'jsonls', 'tailwindcss'}
+local servers = {'tsserver', 'gopls', 'html', 'cssls', 'jsonls', 'tailwindcss', 'solidity_ls' }
 require("lsp-format").setup {}
 
 local on_attach = function(client, bufnr)
