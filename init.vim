@@ -43,16 +43,12 @@ Plug 'onsails/lspkind-nvim'
 " Code formatting/prettier
 Plug 'lukas-reineke/lsp-format.nvim'
 
-
-
 call plug#end()
 
 lua require('syahrulanuar')
 
 " remaps
 nnoremap <C-p> :Telescope find_files<Cr>
-
-
 
 colorscheme onedark
 highlight Normal ctermbg=none
