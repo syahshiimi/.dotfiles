@@ -55,6 +55,10 @@ cmp.setup {
 	formatting = {
 		format = lspkind.cmp_format()
 	},
+    window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
+    },
 	mapping = {
         -- Use Tab and shift-Tab to navigate autocomplete menu
         ['<Tab>'] = function(fallback)
