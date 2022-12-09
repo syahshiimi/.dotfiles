@@ -50,6 +50,10 @@ Plug 'lukas-reineke/lsp-format.nvim'
 " Line Indent
 Plug 'lukas-reineke/indent-blankline.nvim'
 
+" Prettier
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'MunifTanjim/prettier.nvim'
+
 call plug#end()
 
 lua require('syahrulanuar')
