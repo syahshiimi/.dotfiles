@@ -11,6 +11,7 @@ set nobackup
 set noswapfile
 set signcolumn=number
 set textwidth=0
+set cursorline
 
 " Plugins
 
