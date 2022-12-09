@@ -19,8 +19,10 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neovim/nvim-lspconfig'
 
+" Themes
 Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'https://github.com/Shatur/neovim-ayu.git'
 
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
@@ -62,7 +64,7 @@ lua require('syahrulanuar')
 " remaps
 nnoremap <C-p> :Telescope find_files<Cr>
 
-colorscheme onedark
+colorscheme ayu-mirage 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
