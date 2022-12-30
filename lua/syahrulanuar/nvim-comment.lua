@@ -14,6 +14,8 @@ require('nvim_comment').setup(
   operator_mapping = "gc",
   -- text object mapping, comment chunk,,
   comment_chunk_text_object = "ic",
+  single_line_comment_string = 'auto',
+  multi_line_comment_strings = 'auto',
   -- Hook function to call before commenting takes place
   hook = function()
       require("ts_context_commentstring.internal").update_commentstring()
