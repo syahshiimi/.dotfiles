@@ -57,6 +57,10 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 Plug 'MunifTanjim/prettier.nvim'
 
+" Commenting
+Plug 'https://github.com/JoosepAlviste/nvim-ts-context-commentstring.git'
+Plug 'https://github.com/terrortylor/nvim-comment.git'
+
 call plug#end()
 
 lua require('syahrulanuar')
