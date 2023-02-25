@@ -5,7 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
-vim.keymap.set('n', 'E', '<cmd>NvimTreeToggle<cr>')
+vim.keymap.set('n', '<CR>E', '<cmd>NvimTreeToggle<cr>')
 
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
