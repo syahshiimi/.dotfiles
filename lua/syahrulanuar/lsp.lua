@@ -1,6 +1,6 @@
 -- lspconfig
 local nvim_lsp = require('lspconfig')
-local servers = {'tsserver', 'gopls', 'html', 'cssls', 'jsonls', 'tailwindcss', 'solidity_ls', 'svelte', 'vls', 'lua_ls'  }
+local servers = {'tsserver', 'gopls', 'html', 'cssls', 'jsonls', 'tailwindcss', 'solidity_ls', 'svelte', 'vuels', 'lua_ls'  }
 
 local on_attach = function(client, bufnr)
     local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -26,10 +26,6 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
--- require "lspconfig".gopls.setup { on_attach = on_attach }
--- require "lspconfig".html.setup { on_attach = on_attach }
--- require "lspconfig".cssls.setup { on_attach = on_attach }
-
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
@@ -37,6 +33,11 @@ for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         capabilities = capabilities,
         on_attach = on_attach,
+        Lua = {
+            telemetry = {
+                enable = false
+            }
+        }
     }
 end
 
