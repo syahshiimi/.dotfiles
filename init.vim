@@ -63,6 +63,9 @@ Plug 'MunifTanjim/prettier.nvim'
 Plug 'https://github.com/JoosepAlviste/nvim-ts-context-commentstring.git'
 Plug 'https://github.com/terrortylor/nvim-comment.git'
 
+" Trouble
+Plug 'folke/lsp-trouble.nvim'
+
 call plug#end()
 
 lua require('syahrulanuar')
