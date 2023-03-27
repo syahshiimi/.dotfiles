@@ -24,8 +24,8 @@ Plug 'neovim/nvim-lspconfig'
 " Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'nvim-lualine/lualine.nvim'
 " Plug 'https://github.com/Shatur/neovim-ayu.git'
-" Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
@@ -75,8 +75,8 @@ lua require('syahrulanuar')
 nnoremap <C-p> :Telescope find_files<Cr>
 
 " colorscheme ayu-mirage 
-" colorscheme catppuccin-frappe
-colorscheme tokyonight-moon
+colorscheme catppuccin-macchiato
+" colorscheme tokyonight-moon
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
