@@ -10,7 +10,7 @@ set relativenumber
 set nobackup
 set noswapfile
 set signcolumn=number
-set textwidth=0
+set textwidth=60
 set cursorline
 set mouse=a
 
@@ -38,6 +38,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
+" Autopairs
+Plug 'windwp/nvim-autopairs'
 
 " Autocompletion
 Plug 'onsails/lspkind-nvim'
