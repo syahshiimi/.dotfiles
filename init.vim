@@ -70,6 +70,9 @@ Plug 'https://github.com/terrortylor/nvim-comment.git'
 " Trouble
 Plug 'folke/lsp-trouble.nvim'
 
+" Java LSP
+Plug 'mfussenegger/nvim-jdtls'
+
 call plug#end()
 
 lua require('syahrulanuar')
